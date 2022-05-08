@@ -139,9 +139,9 @@ $ echo toplevel_axi_wrapper.bin > /sys/class/fpga_manager/fpga0/firmware
 To compile and load the device tree overlay, execute the following commands.
 
 ```bash
-$ dtc -I dts -O dtb test-ax-int.dts -o test-ax-int.dtb
+$ dtc -I dts -O dtb test-axi-int.dts -o test-axi-int.dtb
 $ mkdir /sys/kernel/config/device-tree/overlays/axi-int
-$ cat test-ax-int.dtb > /sys/kernel/config/device-tree/overlays/axi-int/dtbo
+$ cat test-axi-int.dtb > /sys/kernel/config/device-tree/overlays/axi-int/dtbo
 ```
 
 You should now see the following peripherals. It is important to note that the AXI GPIO
