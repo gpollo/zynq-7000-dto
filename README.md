@@ -11,7 +11,8 @@ in order to expose AXI peripherals of the new bitstream.
 ## Requirements
 
 To run the example, you need a [minized](https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/minized/)
-board from Avnet. The example uses Vivado 2021.1 and Petalinux 2021.1.
+board from Avnet. The example uses Vivado 2021.1 and Petalinux 2021.1. There is a Docker
+build file provided for using Petalinux on any Linux system, see [here](docker/README.md).
 
 ## Vivado Setup
 
