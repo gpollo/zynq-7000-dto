@@ -1,0 +1,31 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target-path = "/amba_pl";
+        __overlay__ {
+            axi_int_test@43c00000 {
+                clock-names = "S_AXI_ACLK";
+                clocks = <0x01 0x0f>;
+                compatible = "generic-uio";
+                interrupt-names = "INTERRUPT";
+                interrupt-parent = <0x04>;
+                interrupts = <0x00 0x1d 0x04>;
+                reg = <0x43c00000 0x10000>;
+                phandle = <0x34>;
+            };
+
+            axi_int_test@43c10000 {
+                clock-names = "S_AXI_ACLK";
+                clocks = <0x01 0x0f>;
+                compatible = "generic-uio";
+                interrupt-names = "INTERRUPT";
+                interrupt-parent = <0x04>;
+                interrupts = <0x00 0x1e 0x04>;
+                reg = <0x43c10000 0x10000>;
+                phandle = <0x35>;
+            };
+        };
+    };
+};
